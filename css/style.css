@@ -13,6 +13,10 @@ body{
 
 /* /reset */
 
+
+
+/* classi margin bottom */
+
 .mb_10{
     margin-bottom: 10px;
 }
@@ -20,6 +24,14 @@ body{
 .mb_20{
     margin-bottom: 20px;
 }
+
+.mb_40{
+    margin-bottom: 40px;
+}
+/* /classi margin bottom */
+
+
+
 
 
 /* header */
@@ -42,11 +54,21 @@ header{
 
 
 
+
+
 /* main */
+
+
 
 main{
     padding: 0 20px;
 }
+
+
+
+
+
+    /* sezione video_recipe */
 
 h1{
     color: #4e3969;
@@ -65,7 +87,7 @@ h4{
 
 ul{
     list-style: none;
-    line-height: 26px;
+    line-height: 36px;
     font-size: 18px;
 }
 
@@ -87,6 +109,73 @@ ul{
 .info{
     padding: 40px;
 }
+
+    /* /sezione video_recipe */
+
+
+
+    /* sezione social_ad */
+
+.social_btns{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.social_btn{
+    width: 50px;
+    border-radius: 45%;
+    border: 14px solid white;
+    background-color: white;
+    box-shadow: lightgrey 1px 1px 40px;
+}
+
+.social_btn > i{
+    padding-left: 3px;
+}
+
+.fa-facebook{
+    color: #1a77f3;
+}
+
+.fa-twitter{
+    color: #009eff ;
+}
+
+.fa-instagram{
+    color: #dc3d9f;
+}
+
+.fa-pinterest{
+    color: #e62c53;
+}
+
+.fa-youtube{
+    color: #e62222;
+}
+
+.social_names{
+    display: none;
+}
+
+.banner{
+    display: none;
+}
+
+    /* /sezione social_ad */
+
+
+
+
+
+    /* sezione presentations */
+
+    /* /sezione presentations */
+
+
+
+
+
 /* /main */
 
 
@@ -98,6 +187,8 @@ ul{
 
 
 /* sezione responsive */
+
+
 
  /* @media screen and (min-width:576px){
 
@@ -115,6 +206,8 @@ ul{
     }
 
 }      */
+
+
 
 @media screen and (min-width:768px){
     
@@ -146,7 +239,22 @@ ul{
         width: calc(100% / 3);
     }
 
+    .banner{
+        display: block;
+        width: 100%;
+    }
+
+    .social_btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
 }
+
+
 
 @media screen and (min-width:992px){
 
@@ -179,7 +287,24 @@ ul{
     li{
         width: 100%;
     }
+
+    .social_names{
+        display: inline;
+        font-weight: bolder;
+        margin-left: 5px;
+    }
+
+    .social_btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
    
 }
+
+
+
 
 /* /sezione responsive */
