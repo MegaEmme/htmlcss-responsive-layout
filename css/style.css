@@ -5,16 +5,22 @@
     padding: 0;
     margin: 0;
     font-family: "Montserrat", 'Helvetica Neue', sans-serif;
-    font-weight: 800;
 }
 
 body{
     background-color: #f6f5f3;
 }
 
-
-
 /* /reset */
+
+.mb_10{
+    margin-bottom: 10px;
+}
+
+.mb_20{
+    margin-bottom: 20px;
+}
+
 
 /* header */
 
@@ -25,14 +31,37 @@ body{
     color: #ff9614;
     text-shadow: 1px 1px 2px #595959;
   }
-
-/* /header */
   
 header{
     background-color: #ffffff;
     text-align: center;
-    padding: 10px 0;
 }
+
+/* /header */
+
+
+
+/* main */
+
+main{
+    padding: 0 20px;
+}
+
+h1{
+    color: #4e3969;
+    font-weight: 900;
+}
+
+h4{
+    font-weight: 100;
+    font-size: small;
+    color: #c9b9a7;
+}
+
+.hidden_title{
+    display: none;
+}
+/* /main */
 
 
 
@@ -44,7 +73,7 @@ header{
 
 /* sezione responsive */
 
-@media screen and (min-width:576px){
+ /* @media screen and (min-width:576px){
 
     body{
         background-color: red;
@@ -59,14 +88,15 @@ header{
         justify-content: center;
     }
 
-}
+}      */
 
 @media screen and (min-width:768px){
     body{
-        background-color: green;
+        /* background-color: green; */
     }
     
     header{
+        display: flex;
         justify-content: left;
         padding-left: 25px;
     }
@@ -74,11 +104,20 @@ header{
     #title{
         font-size: 4rem;
     }
+
+    .hidden_title{
+        display: inline;
+    }
+
+    main{
+        padding:0 40px;
+    }
+
 }
 
 @media screen and (min-width:992px){
     body{
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     #title{
