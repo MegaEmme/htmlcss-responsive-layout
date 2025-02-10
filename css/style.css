@@ -8,17 +8,82 @@
     font-weight: 800;
 }
 
+body{
+    background-color: #f6f5f3;
+}
+
+
+
 /* /reset */
 
 /* header */
 
-#nerko-one-regular {
+#title {
     font-family: "Nerko One";
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ff9614;
     text-shadow: 1px 1px 2px #595959;
   }
 
 /* /header */
   
+header{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+/* sezione responsive */
+
+@media screen and (min-width:576px){
+
+    body{
+        background-color: red;
+        position: relative;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    body{
+        background-color: green;
+    }
+    
+    header{
+        justify-content: left;
+        padding-left: 25px;
+    }
+
+    #title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    body{
+        background-color: blue;
+    }
+
+    #title{
+        font-size: 5rem;
+    }
+}
+
+/* /sezione responsive */
