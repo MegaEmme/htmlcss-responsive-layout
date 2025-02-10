@@ -24,6 +24,7 @@
 .mb_40{
     margin-bottom: 40px;
 }
+
 /* /classi margin bottom */
 
 
@@ -48,6 +49,16 @@ h3{
 h4{
     font-weight: 100;
     color: #c9b9a7;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+h6{
+    font-size: 16px;
+    font-weight: 100;
 }
 
 p{
@@ -93,15 +104,11 @@ header{
 
 /* main */
 
-
-
 main{
     max-width: 640px;
     padding: 0 20px;
     margin: 0 auto;
 }
-
-
 
     /* sezione video_recipe */
 
@@ -131,8 +138,6 @@ ul{
 }
 
     /* /sezione video_recipe */
-
-
 
     /* sezione social_ad */
 
@@ -184,8 +189,6 @@ ul{
 
     /* /sezione social_ad */
 
-
-
     /* sezione presentations */
 
 .img{
@@ -195,45 +198,74 @@ ul{
 
     /* /sezione presentations */
 
-
-
-    /* /main */
-
-
-
-    /* footer */
-
-    /* /footer */
+/* /main */
 
 
 
+/* footer */
 
+footer{
+    padding-top: 30px;
+    background-color: #7c69a4;
+    color: white;
+    text-align: center;
+}
 
+.contacts  i{
+    margin-right: 5px;
+}
+
+.links > ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    margin: 0 15%;
+    line-height: 20px;
+}
+
+footer a{
+    color: white;
+}
+
+/* /footer */
 
 
 
 /* sezione responsive */
 
-
-
- /* @media screen and (min-width:576px){
+@media screen and (min-width:576px) {
 
     body{
-        background-color: red;
         position: relative;
     }
-
+    
     header{
         width: 100%;
         position: fixed;
+        top: 0;
         z-index: 1;
         display: flex;
         justify-content: center;
     }
 
-}      */
+    .img{
+        float: left;
+        width: 50%;
+        padding: 15px;
+    }
 
+    .social_btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
 
+}     
 
 @media screen and (min-width:768px){
     
@@ -256,7 +288,7 @@ ul{
         padding:0 10%;
     }
 
-    ul{
+    .list{
         display: flex;
         flex-wrap: wrap;
         line-height: 60px;
@@ -272,13 +304,7 @@ ul{
 
     }
 
-    .social_btn{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        border-radius: 20px;
-        margin-right: 20px;
-    }
+c
 
     .img{
         float: left;
@@ -290,16 +316,17 @@ ul{
         margin-top: 20px;
     }
 
+    .links > ul {
+        flex-wrap: nowrap;
+    }
+
 }
-
-
 
 @media screen and (min-width:992px){
 
     main{
         max-width: 1920px;
         margin-top: 60px;
-        padding: 0 20%;
     }
 
     #title{
@@ -309,6 +336,7 @@ ul{
     .container{
         display: flex;
     }
+
     .image{
         width: 100%;
         height: 100%;
@@ -318,7 +346,7 @@ ul{
         width: 30%;
     }
 
-    ul{
+    .list{
         line-height: 30px;
         flex-direction: column;
     }
@@ -340,10 +368,20 @@ ul{
         border-radius: 20px;
         margin-right: 10px;
     }
-   
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
-
-
-
 
 /* /sezione responsive */
