@@ -27,9 +27,10 @@ body{
 #title {
     font-family: "Nerko One";
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ff9614;
     text-shadow: 1px 1px 2px #595959;
+
   }
   
 header{
@@ -50,16 +51,41 @@ main{
 h1{
     color: #4e3969;
     font-weight: 900;
+    font-size: xx-large;
+}
+
+h2{
+    margin-bottom: 30px;
 }
 
 h4{
     font-weight: 100;
-    font-size: small;
     color: #c9b9a7;
+}
+
+ul{
+    list-style: none;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: lightgrey 1px 1px 40px;
 }
 
 .hidden_title{
     display: none;
+}
+
+.image{
+    width: 100%;
+
+}
+
+.info{
+    padding: 40px;
 }
 /* /main */
 
@@ -91,9 +117,6 @@ h4{
 }      */
 
 @media screen and (min-width:768px){
-    body{
-        /* background-color: green; */
-    }
     
     header{
         display: flex;
@@ -102,7 +125,7 @@ h4{
     }
 
     #title{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .hidden_title{
@@ -110,19 +133,53 @@ h4{
     }
 
     main{
-        padding:0 40px;
+        padding:0 10%;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 60px;
+    }
+
+    li{
+        width: calc(100% / 3);
     }
 
 }
 
 @media screen and (min-width:992px){
-    body{
-        /* background-color: blue; */
+
+    main{
+        margin-top: 60px;
+        padding: 0 20%;
     }
 
     #title{
-        font-size: 5rem;
+        font-size: 6rem;
     }
+
+    .container{
+        display: flex;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .info{
+        width: 30%;
+    }
+
+    ul{
+        line-height: 30px;
+        flex-direction: column;
+    }
+
+    li{
+        width: 100%;
+    }
+   
 }
 
 /* /sezione responsive */
