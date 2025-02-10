@@ -189,6 +189,7 @@ ul{
     /* sezione presentations */
 
 .img{
+    width: 100%;
     padding:20px 20%;
 }
 
@@ -268,6 +269,7 @@ ul{
     .banner{
         display: block;
         width: 100%;
+
     }
 
     .social_btn{
@@ -278,8 +280,14 @@ ul{
         margin-right: 20px;
     }
 
-    .float{
+    .img{
         float: left;
+        width: 50%;
+        padding: 15px;
+    }
+
+    .recipe{
+        margin-top: 20px;
     }
 
 }
