@@ -278,6 +278,10 @@ ul{
         margin-right: 20px;
     }
 
+    .float{
+        float: left;
+    }
+
 }
 
 
