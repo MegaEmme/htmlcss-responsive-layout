@@ -7,10 +7,6 @@
     font-family: "Montserrat", 'Helvetica Neue', sans-serif;
 }
 
-body{
-    background-color: #f6f5f3;
-}
-
 /* /reset */
 
 
@@ -32,43 +28,7 @@ body{
 
 
 
-
-
-/* header */
-
-#title {
-    font-family: "Nerko One";
-    font-weight: 500;
-    font-size: 4rem;
-    color: #ff9614;
-    text-shadow: 1px 1px 2px #595959;
-
-  }
-  
-header{
-    background-color: #ffffff;
-    text-align: center;
-}
-
-/* /header */
-
-
-
-
-
-/* main */
-
-
-
-main{
-    padding: 0 20px;
-}
-
-
-
-
-
-    /* sezione video_recipe */
+/* classi text elements */
 
 h1{
     color: #4e3969;
@@ -80,10 +40,70 @@ h2{
     margin-bottom: 30px;
 }
 
+h3{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
 h4{
     font-weight: 100;
     color: #c9b9a7;
 }
+
+p{
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+hr{
+    border: 1px solid #f7972e;
+    width: calc(100% / 6);
+}
+
+/* /classi text elements */
+
+
+
+body{
+    background-color: #f6f5f3;
+}
+
+
+
+/* header */
+
+#title {
+    font-family: "Nerko One";
+    font-weight: 500;
+    font-size: 4rem;
+    color: #ff9614;
+    text-shadow: 1px 1px 2px #595959;
+
+}
+  
+header{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* /header */
+
+
+
+/* main */
+
+
+
+main{
+    max-width: 640px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+    /* sezione video_recipe */
 
 ul{
     list-style: none;
@@ -166,17 +186,17 @@ ul{
 
 
 
-
-
     /* sezione presentations */
+
+.img{
+    padding:20px 20%;
+}
 
     /* /sezione presentations */
 
 
 
-
-
-/* /main */
+    /* /main */
 
 
 
@@ -226,6 +246,7 @@ ul{
     }
 
     main{
+        max-width: 1019px;
         padding:0 10%;
     }
 
@@ -259,6 +280,7 @@ ul{
 @media screen and (min-width:992px){
 
     main{
+        max-width: 1920px;
         margin-top: 60px;
         padding: 0 20%;
     }
